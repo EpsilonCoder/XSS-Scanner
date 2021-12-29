@@ -1,13 +1,13 @@
 # XSS Scanner
 
-Cross-Site Scripting (XSS) is one of the most well known web application vulnerabilities. It even has a dedicated chapter in the OWASP Top 10 project and it is a highly chased vulnerability in bug bounty programs.
+Le Cross-Site Scripting (XSS) est l'une des vulnérabilités les plus connues des applications Web. Il a même un chapitre dédié dans le projet OWASP Top 10 et c'est une vulnérabilité très recherchée dans les programmes de bug bounty.
 
-The scanner gets a link from the user and scan the website for XSS vulnerability by injecting malicious scripts at the input place. The injection happens in headless browser named Chromium and controlled by Puppeteer automation.
+Le scanner obtient un lien de l'utilisateur et recherche la vulnérabilité XSS sur le site Web en injectant des scripts malveillants à l'endroit d'entrée. L'injection se produit dans un navigateur sans tête nommé Chromium et contrôlé par l'automatisation de Puppeteer.
 
-It works in two steps:
-1. Find the target: In this first step, the tool tries to identify all the places at the page including injectable parameters in forms, URLs, headers, etc.
-2. Test for XSS: For each place discovered in the previous step, the scanner will try to detect if the parameters are vulnerable to Cross-Site Scripting. The tool injects a piece of JavaScript code, including some special HTML characters (>, <, ", ') and it will try to see if they are returned in the response page without sanitization.
-If the tool detects at least one vulnerability, it will return that the website have XSS vulnerability.
+Il fonctionne en deux étapes :
+1. Trouver la cible : Dans cette première étape, l'outil essaie d'identifier tous les endroits de la page, y compris les paramètres injectables dans les formulaires, les URL, les en-têtes, etc.
+2. Test pour XSS : Pour chaque endroit découvert à l'étape précédente, le scanner essaiera de détecter si les paramètres sont vulnérables au Cross-Site Scripting. L'outil injecte un morceau de code JavaScript, y compris des caractères HTML spéciaux (>, <, ", ') et il essaiera de voir s'ils sont renvoyés dans la page de réponse sans nettoyage.
+Si l'outil détecte au moins une vulnérabilité, il renverra que le site Web a une vulnérabilité XSS.
 
 ### Technologies
  * Puppeteer
@@ -17,7 +17,7 @@ If the tool detects at least one vulnerability, it will return that the website 
  
  ![](public/pictures/xss_scanner.png)
  
-### How to install
+### Comment installer
 
 Clone the repository:
 ```
@@ -36,3 +36,11 @@ Run the application:
 npm start
 ```
 Open the browser at http://localhost:4000/
+
+###  Ce fut vraiment un plaisir 
+###  EpsilonCoder 
+
+
+
+
+###  DIADIEUF
